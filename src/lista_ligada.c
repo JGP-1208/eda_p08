@@ -27,6 +27,12 @@ bool lista_insertar_final(DLista *l, void *info, size_t size){
     l -> tail = new;
     return true;
 }
+int lista_num_nodos(DLlista* l){
+
+    int i = 0;
+    for(Ndo *tmp = l -> head; tmp != NULL; tmp = tmp -> sig, i++);
+    return;
+}
 
 bool lista_insertar_x_posicion(DLista *l,int pos, void *info, size_t size){
 
