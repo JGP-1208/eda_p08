@@ -1,5 +1,13 @@
 #include "lista_ligada.h"
 
+DLista* lista_crear(){
+    DLista* l = (DLista*)malloc(sizeof(DLista));
+    if(l != NULL){
+    l -> head = l -> tail = NULL;
+    }
+    return l;
+}
+
 bool lista_insertar_vacia(DLista *l, void *info, size_t size){
 
     if(l = NULL) return false;
