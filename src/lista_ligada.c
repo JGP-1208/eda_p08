@@ -10,7 +10,12 @@ DLista* lista_crear(){
     return l;
 }
 
-
+bool lista_es_vacia(DLista *l){
+    if(l == NULL || l->head == NULL){
+    return true;
+    }                
+    return false;                
+}
 
 bool lista_insertar_vacia(DLista *l, void *info, size_t size){
 
