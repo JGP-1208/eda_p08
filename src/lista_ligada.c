@@ -1,4 +1,6 @@
 #include "lista_ligada.h"
+#include <stdbool.h>
+#include <stdio.h>
 
 DLista* lista_crear(){
     DLista* l = (DLista*)malloc(sizeof(DLista));
@@ -7,6 +9,8 @@ DLista* lista_crear(){
     }
     return l;
 }
+
+
 
 bool lista_insertar_vacia(DLista *l, void *info, size_t size){
 
